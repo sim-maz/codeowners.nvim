@@ -32,7 +32,7 @@ Example for adding current buffers codeowner to lualine.nvim:
 ```lua
 -- lazy.nvim
 {
-  "rsreimer/codeowners.nvim",
+  "sim-maz/codeowners.nvim",
   config = function()
     require("codeowners").setup()
   end,
