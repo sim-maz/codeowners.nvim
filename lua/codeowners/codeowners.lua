@@ -1,6 +1,6 @@
 local M = {}
 
-local codeownersFilePath = ".github/CODEOWNERS"
+local codeownersFilePath = "./CODEOWNERS"
 local codeownersFileEntries = {}
 local loaded = false
 local bufferOwnerCache = {}
