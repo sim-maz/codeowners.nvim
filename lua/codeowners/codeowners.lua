@@ -50,7 +50,7 @@ function M.get_owner(fullpath)
 	local path = fullpath:sub(#cwd + 1)
 
 	for _, entry in pairs(codeownersFileEntries) do
-		if path:sub(1, #entry.path) == entry.path then
+		if path:match("^" .. entry.path) then
 			bufferOwnerCache[fullpath] = entry.usernames
 			return entry.usernames
 		end
